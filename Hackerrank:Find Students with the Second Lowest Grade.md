@@ -26,11 +26,25 @@ To write a Python program to:
 ---
 
 ## 💻  Program
-
-Add Code Here
+```
+n=int(input())
+lists=[]
+for i in range(n):
+    name=input()
+    marks=float(input())
+    list=[name,marks]
+    lists.append(list)
+grades=sorted(set([grade for name,grade in lists]))
+sl=grades[1]
+l2=sorted([name for name,grade in lists if grade==sl])
+for n in l2:
+    print(n)
+```
 
 ## Output
+<img width="809" height="424" alt="image" src="https://github.com/user-attachments/assets/73dbea96-3dcc-4559-9873-e6a2674d9867" />
 
 ## Result
+The program successfully reads names and marks of students, finds the second lowest mark, and then prints the names of all students having that mark in alphabetical order.
 
 
